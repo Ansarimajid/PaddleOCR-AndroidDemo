@@ -1,0 +1,20 @@
+{
+  "sdkFolder": "/home/majid/Android/Sdk",
+  "sideBySideNdkFolderNames": [
+    "sources",
+    "simpleperf",
+    "build",
+    "21.1.6352462",
+    "toolchains",
+    "shader-tools",
+    "prebuilt",
+    "README.md",
+    "21.4.7075529",
+    "python-packages",
+    "wrap.sh",
+    "sysroot",
+    "platforms",
+    "CHANGELOG.md",
+    "meta"
+  ]
+}

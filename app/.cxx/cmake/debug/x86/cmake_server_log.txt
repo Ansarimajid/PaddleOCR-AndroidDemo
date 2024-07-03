@@ -1,0 +1,315 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "/home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp",
+  "buildDirectory": "/home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/.cxx/cmake/debug/x86",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11 -frtti -fexceptions -Wno-format",
+    "-DCMAKE_FIND_ROOT_PATH\u003d/home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/.cxx/cmake/debug/prefab/x86/prefab",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/home/gpunew/Android/Sdk/ndk/21.4.7075529/build/cmake/android.toolchain.cmake",
+    "-DANDROID_ABI\u003dx86",
+    "-DANDROID_NDK\u003d/home/gpunew/Android/Sdk/ndk/21.4.7075529",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003dx86",
+    "-DCMAKE_ANDROID_NDK\u003d/home/gpunew/Android/Sdk/ndk/21.4.7075529",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/build/intermediates/cmake/debug/obj/x86",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/build/intermediates/cmake/debug/obj/x86",
+    "-DCMAKE_MAKE_PROGRAM\u003d/home/gpunew/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_SYSTEM_VERSION\u003d23",
+    "-DANDROID_PLATFORM\u003dandroid-23",
+    "-DANDROID_STL\u003dc++_shared",
+    "-DANDROID_ARM_NEON\u003dTRUE"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMAKE SERVER: Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+CMAKE SERVER: Check for working C compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":65,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":155,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMAKE SERVER: Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":184,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+CMAKE SERVER: Check for working CXX compiler: /home/gpunew/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":211,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":262,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":311,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"opencv dir: /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/../../../OpenCV/sdk/native/jni","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: opencv dir: /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/../../../OpenCV/sdk/native/jni
+CMAKE SERVER: opencv dir: /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/../../../OpenCV/sdk/native/jni
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/OpenCV/sdk/native/jni/OpenCVConfig.cmake:47 (message):\n  Found OpenCV Android Pack but it has no binaries compatible with your ABI\n  (can't find: /abi-x86)\nCall Stack (most recent call first):\n  CMakeLists.txt:18 (find_package)\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/OpenCV/sdk/native/jni/OpenCVConfig.cmake:47 (message):
+  Found OpenCV Android Pack but it has no binaries compatible with your ABI
+  (can't find: /abi-x86)
+Call Stack (most recent call first):
+  CMakeLists.txt:18 (find_package)
+
+CMAKE SERVER: CMake Warning at /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/OpenCV/sdk/native/jni/OpenCVConfig.cmake:47 (message):
+  Found OpenCV Android Pack but it has no binaries compatible with your ABI
+  (can't find: /abi-x86)
+Call Stack (most recent call first):
+  CMakeLists.txt:18 (find_package)
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Error at CMakeLists.txt:18 (find_package):\n  Found package configuration file:\n\n    /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/../../../OpenCV/sdk/native/jni/OpenCVConfig.cmake\n\n  but it set OpenCV_FOUND to FALSE so package \"OpenCV\" is considered to be\n  NOT FOUND.\n\n","title":"Error","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Error at /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/CMakeLists.txt:18 (find_package):
+  Found package configuration file:
+
+    /home/gpunew/Documents/Majid/PaddleOCR-main/deploy/android_demo/app/src/main/cpp/../../../OpenCV/sdk/native/jni/OpenCVConfig.cmake
+
+  but it set OpenCV_FOUND to FALSE so package "OpenCV" is considered to be
+  NOT FOUND.
+

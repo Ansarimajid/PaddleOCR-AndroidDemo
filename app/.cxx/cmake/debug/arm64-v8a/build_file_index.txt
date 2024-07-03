@@ -1,0 +1,1 @@
+/home/majid/Documents/Majid/Android/android_demo/app/src/main/cpp/CMakeLists.txt
