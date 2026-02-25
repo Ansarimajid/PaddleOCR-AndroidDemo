@@ -1,118 +1,146 @@
-- [Android Demo](#android-demo)
-  - [1. 简介](#1-简介)
-  - [2. 近期更新](#2-近期更新)
-  - [3. 快速使用](#3-快速使用)
-    - [3.1 环境准备](#31-环境准备)
-    - [3.2 导入项目](#32-导入项目)
-    - [3.3 运行demo](#33-运行demo)
-    - [3.4 运行模式](#34-运行模式)
-    - [3.5 设置](#35-设置)
-  - [4 更多支持](#4-更多支持)
+# 📱 PaddleOCR Android Demo
 
-# Android Demo
+A powerful, on-device OCR (Optical Character Recognition) app for Android, powered by [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) and built with [PaddleLite v2.10](https://github.com/PaddlePaddle/Paddle-Lite/tree/release/v2.10). Run text detection, classification, and recognition **entirely on-device** — no internet required.
 
-## 1. 简介
-此为PaddleOCR的Android Demo，目前支持文本检测，文本方向分类器和文本识别模型的使用。使用 [PaddleLite v2.10](https://github.com/PaddlePaddle/Paddle-Lite/tree/release/v2.10) 进行开发。
+---
 
-## 2. 近期更新
-* 2022.02.27
-    * 预测库更新到PaddleLite v2.10
-    * 支持6种运行模式：
-      * 检测+分类+识别
-      * 检测+识别
-      * 分类+识别
-      * 检测
-      * 识别
-      * 分类
+## ✨ Features
 
-## 3. 快速使用
+- **6 flexible recognition modes** — from full detection + classification + recognition pipelines down to individual model runs
+- **Real-time camera capture** — point and shoot to extract text instantly
+- **Gallery image support** — select any image from your photo library
+- **Fully customizable settings** — tune model parameters, CPU thread count, and detection thresholds to match your device
+- **On-device inference** — all processing happens locally using PaddleLite, ensuring speed and privacy
 
-### 3.1 环境准备
-1. 在本地环境安装好 Android Studio 工具，详细安装方法请见[Android Stuido 官网](https://developer.android.com/studio)。
-2. 准备一部 Android 手机，并开启 USB 调试模式。开启方法: `手机设置 -> 查找开发者选项 -> 打开开发者选项和 USB 调试模式`
+---
 
-**注意**：如果您的 Android Studio 尚未配置 NDK ，请根据 Android Studio 用户指南中的[安装及配置 NDK 和 CMake ](https://developer.android.com/studio/projects/install-ndk)内容，预先配置好 NDK 。您可以选择最新的 NDK 版本，或者使用 Paddle Lite 预测库版本一样的 NDK
+## 🆕 What's New (2022.02.27)
 
-### 3.2 导入项目
+- Upgraded inference library to **PaddleLite v2.10**
+- Added **6 recognition modes**:
+  - Detection + Classification + Recognition *(default)*
+  - Detection + Recognition
+  - Classification + Recognition
+  - Detection only
+  - Recognition only
+  - Classification only
 
-点击 File->New->Import Project...， 然后跟着Android Studio的引导导入
-导入完成后呈现如下界面
-![](https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/import_demo.jpg)
+---
 
-### 3.3 运行demo
-将手机连接上电脑后，点击Android Studio工具栏中的运行按钮即可运行demo。在此过程中，手机会弹出"允许从 USB 安装软件权限"的弹窗，点击允许即可。
+## 🚀 Quick Start
 
-软件安转到手机上后会在手机主屏最后一页看到如下app
+### Prerequisites
+
+1. **Android Studio** — Download and install from the [official site](https://developer.android.com/studio).
+2. **An Android device** with USB Debugging enabled.  
+   *To enable:* `Settings → Developer Options → Enable USB Debugging`
+3. **NDK configured** — Follow the [Android Studio NDK setup guide](https://developer.android.com/studio/projects/install-ndk) if you haven't already. You can use the latest NDK version or one matching the PaddleLite version.
+
+### Import the Project
+
+1. Open Android Studio and go to **File → New → Import Project...**
+2. Select the project folder and follow the on-screen prompts.
+
+Once imported, you'll see the project structure in the IDE:
+
+![Import demo](https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/import_demo.jpg)
+
+### Build & Run
+
+1. Connect your Android device via USB.
+2. Click the **Run** button in the Android Studio toolbar.
+3. If prompted on your device to allow installation via USB, tap **Allow**.
+
+After installation, the app icon will appear on your home screen:
+
 <div align="left">
-    <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/install_finish.jpeg" width="400">
+  <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/install_finish.jpeg" width="360">
 </div>
 
-点击app图标即可启动app，启动后app主页如下
+---
+
+## 🖥️ Using the App
+
+### Main Interface
 
 <div align="left">
-    <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/main_page.jpg" width="400">
+  <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/main_page.jpg" width="360">
 </div>
 
-app主页中有四个按钮，一个下拉列表和一个菜单按钮，他们的功能分别为
+The home screen has the following controls:
 
-* 运行模型：按照已选择的模式，运行对应的模型组合
-* 拍照识别：唤起手机相机拍照并获取拍照的图像，拍照完成后需要点击运行模型进行识别
-* 选取图片：唤起手机相册拍照选择图像，选择完成后需要点击运行模型进行识别
-* 清空绘图：清空当前显示图像上绘制的文本框，以便进行下一次识别(每次识别使用的图像都是当前显示的图像)
-* 下拉列表：进行运行模式的选择，目前包含6种运行模式，默认模式为**检测+分类+识别**详细说明见下一节。
-* 菜单按钮：点击后会进入菜单界面，进行模型和内置图像有关设置
+| Control | Description |
+|---|---|
+| **Run Model** | Runs OCR using the currently selected mode |
+| **Take Photo** | Opens the camera — capture an image, then tap *Run Model* |
+| **Choose Image** | Opens the photo gallery — pick an image, then tap *Run Model* |
+| **Clear Drawing** | Removes bounding boxes drawn on the current image |
+| **Mode Dropdown** | Select one of 6 recognition modes (default: Detection + Classification + Recognition) |
+| **Menu (⋮)** | Access settings to configure models and built-in test images |
 
-点击运行模型后，会按照所选择的模式运行对应的模型，**检测+分类+识别**模式下运行的模型结果如下所示：
+### Sample Output
 
-<img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_cls_rec.jpg" width="400">
+After running in **Detection + Classification + Recognition** mode:
 
-模型运行完成后，模型和运行状态显示区`STATUS`字段显示了当前模型的运行状态，这里显示为`run model successed`表明模型运行成功。
+<img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_cls_rec.jpg" width="360">
 
-模型的运行结果显示在运行结果显示区，显示格式为
-```text
-序号：Det：(x1,y1)(x2,y2)(x3,y3)(x4,y4) Rec: 识别文本,识别置信度 Cls：分类类别,分类分时
+Results are displayed in the format:
+```
+[Index]: Det: (x1,y1)(x2,y2)(x3,y3)(x4,y4)  Rec: <text>, <confidence>  Cls: <label>, <score>
 ```
 
-### 3.4 运行模式
+A `STATUS: run model succeeded` message confirms successful inference.
 
-PaddleOCR demo共提供了6种运行模式，如下图
-<div align="left">
-    <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/select_mode.jpg" width="400">
-</div>
+---
 
-每种模式的运行结果如下表所示
+## 🔀 Recognition Modes
 
-| 检测+分类+识别                                                                                       | 检测+识别                                                                                      | 分类+识别                                                                                      |
-|------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_cls_rec.jpg" width="400"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_rec.jpg" width="400"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_cls_rec.jpg" width="400"> |
+Select your mode from the dropdown. All 6 modes are shown below:
 
+| Detection + Classification + Recognition | Detection + Recognition | Classification + Recognition |
+|---|---|---|
+| <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_cls_rec.jpg" width="280"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det_rec.jpg" width="280"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_cls_rec.jpg" width="280"> |
 
-| 检测                                                                                     | 识别                                                                                     | 分类                                                                                     |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det.jpg" width="400"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_rec.jpg" width="400"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_cls.jpg" width="400"> |
+| Detection only | Recognition only | Classification only |
+|---|---|---|
+| <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_det.jpg" width="280"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_rec.jpg" width="280"> | <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/run_cls.jpg" width="280"> |
 
-### 3.5 设置
+---
 
-设置界面如下
+## ⚙️ Settings
 
 <div align="left">
-    <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/settings.jpg" width="400">
+  <img src="https://paddleocr.bj.bcebos.com/PP-OCRv2/lite/imgs/settings.jpg" width="360">
 </div>
 
-在设置界面可以进行如下几项设定：
-1. 普通设置
-   * Enable custom settings: 选中状态下才能更改设置
-   * Model Path: 所运行的模型地址，使用默认值就好
-   * Label Path: 识别模型的字典
-   * Image Path: 进行识别的内置图像名
-2. 模型运行态设置，此项设置更改后返回主界面时，会自动重新加载模型
-   * CPU Thread Num: 模型运行使用的CPU核心数量
-   * CPU Power Mode: 模型运行模式，大小核设定
-3. 输入设置
-   * det long size: DB模型预处理时图像的长边长度，超过此长度resize到该值，短边进行等比例缩放，小于此长度不进行处理。
-4. 输出设置
-   * Score Threshold: DB模型后处理box的阈值，低于此阈值的box进行过滤，不显示。
+Access the settings menu via the **⋮** icon. The following options are available:
 
-## 4 更多支持
-1. 实时识别，更新预测库可参考 https://github.com/PaddlePaddle/Paddle-Lite-Demo/tree/develop/ocr/android/app/cxx/ppocr_demo
-2. 更多Paddle-Lite相关问题可前往[Paddle-Lite](https://github.com/PaddlePaddle/Paddle-Lite) ，获得更多开发支持
+**General Settings**
+- `Enable Custom Settings` — Must be checked to edit any settings below
+- `Model Path` — Path to the model files (default recommended)
+- `Label Path` — Dictionary file used by the recognition model
+- `Image Path` — Name of the built-in test image
+
+**Runtime Settings** *(Changing these will automatically reload the model)*
+- `CPU Thread Num` — Number of CPU threads used for inference
+- `CPU Power Mode` — Power/performance mode (controls big/little core usage)
+
+**Input Settings**
+- `Det Long Size` — Long-edge size for the DB detection model's input. Images exceeding this are resized proportionally; smaller images are left unchanged.
+
+**Output Settings**
+- `Score Threshold` — Confidence cutoff for DB post-processing. Bounding boxes with scores below this value are filtered out.
+
+---
+
+## 📚 Resources & Further Reading
+
+- **Real-time OCR demo with live camera feed:** [Paddle-Lite-Demo on GitHub](https://github.com/PaddlePaddle/Paddle-Lite-Demo/tree/develop/ocr/android/app/cxx/ppocr_demo)
+- **PaddleLite documentation and community:** [Paddle-Lite GitHub](https://github.com/PaddlePaddle/Paddle-Lite)
+- **PaddleOCR main repository:** [PaddleOCR GitHub](https://github.com/PaddlePaddle/PaddleOCR)
+
+---
+
+## 📄 License
+
+This project follows the license terms of [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.6/LICENSE).
